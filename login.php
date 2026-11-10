@@ -1,7 +1,24 @@
 <?php
-    session_start();
+   
+   session_start();
 
-    $senha = "";
+    mysqli_report(MYSQLI_REPORT_OFF);
+
+    $server     = "localhost";
+    $usuario_db = "root";
+    $senha_db   = "";
+    $banco      = "meusite";
+
+    $conexao = mysqli_connect($server, $usuario_db, $senha_db, $banco);
+
+    if (!$conexao) {
+        echo "<h1>Erro de conexão</h1><p>Clique <a href='./index.php'>aqui</a> para voltar para a página principal.</p>";
+        exit;
+    }
+
+    mysqli_set_charset($conexao, "utf8mb4");
+
+    $msg = "";
 
 ?>
 
