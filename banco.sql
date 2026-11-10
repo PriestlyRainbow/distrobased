@@ -6,10 +6,10 @@ CREATE TABLE IF NOT EXISTS usuarios (
     login VARCHAR(50) NOT NULL UNIQUE,          -- nome da distro
     senha VARCHAR(255) NOT NULL,
     data_lancamento DATE NOT NULL,
-    gerenciador_sistemas VARCHAR(50) NOT NULL,  -- systemd, OpenRC, runit...
+    gerenciador_sistemas VARCHAR(50) NOT NULL,
     ambiente_desktop VARCHAR(100) NOT NULL,
-    arquiteturas VARCHAR(100) NOT NULL,         -- ex: x86_64, ARM64
+    arquiteturas VARCHAR(100) NOT NULL,
     recomendacao_uso TEXT NOT NULL,
-    requisitos_hardware TEXT NOT NULL,
+    requisitos_hardware ENUM('Retro','Fraco','Padrão','Pesado') NOT NULL,
     nivel_dificuldade ENUM('Iniciante','Intermediário','Avançado') NOT NULL
 );
