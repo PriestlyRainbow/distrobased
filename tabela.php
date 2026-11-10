@@ -5,10 +5,10 @@ mysqli_report(MYSQLI_REPORT_OFF);
 
 $conexao = mysqli_connect("localhost", "root", "", "meusite");
 
-if (!$conexao) {
-    echo "<h1>Erro de conexão</h1><p>Clique <a href='./login.php'>aqui</a> para voltar.</p>";
-    exit;
-}
+//if (!$conexao) {
+//    echo "<h1>Erro de conexão</h1><p>Clique <a href='./login.php'>aqui</a> para voltar.</p>";
+//    exit;
+//}
 
 mysqli_set_charset($conexao, "utf8mb4");
 
