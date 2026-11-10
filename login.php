@@ -16,7 +16,7 @@
 <body>
     <h1 style = "text-align: center;">Fazer cadastro/login</h1>
     <form method="post" action="conta.php">
-        Login: <input type="text" name="Login"><br>
+        Login: <input type="text" name="login"><br>
         Senha: <input type="text" name="senha"><br>
         <input type="submit">
     </form>
