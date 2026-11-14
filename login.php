@@ -2,7 +2,20 @@
    
    session_start();
 
-    if (isset($_SESSION[""]) && $_SESSION[""];
+   
+   function validar_login() {
+        
+   if (login == true){
+    // deve retornar se o login foi bem susedido
+
+   }
+    
+   //qualquer coisa que a função retornar que não seja true ele deve impedir o login imediatamente 
+   else {
+
+   }
+   
+   }  
 
 ?>
 
